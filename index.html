@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>url-shortening-api-master</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+                    <nav>
+                        <ul class="nav-1">
+                            <li><a href="#">features</a></li>
+                            <li><a href="#">pricing</a></li>
+                            <li><a href="#">resources</a></li>
+                        </ul>
+                        <div class="nav-2">
+                        <div><a href="">login</a></div>
+                        <div class="signup"><button type="button" class="btn"><a href="">sign up</a></button></div>
+                        </div>
+                     </nav>
+                     <div class="open-nav"><img src="img/icon-hamburger.svg" alt=""></div>
+                        <div class="close-nav"><img src="img/icon-close.svg" alt=""></div>
+        </div>
+        <main>
+            <div class="content">
+                <h1>More than just shortner links</h1> 
+                <p>Build your brand's recognition and get detailed  insights 
+                on how your links are performing.</p>
+                <button><a href="#getstarted">Get Started</a></button>
+            </div>
+            <div class="img"><img src="img/illustration-working.svg" alt="workingclass"></div>
+        </main>  
+    </header>
+    <form action="">
+        <input type="text" id="links" class="text" name="links" placeholder="shorten a link here...">
+        <button><a href="#">Shorten it!</a></button>
+    </form>
+    <article class="profile">
+        <div class="stats">
+        <h2>Advanced Statistics</h2>
+        <p>Track how your links are performing aross the web with our advanced statistics dashboard.</p>
+        </div>
+        <div class="flex">
+            <div class="card card1"> 
+                <div class="img-card"><img src="img/icon-brand-recognition.svg" alt=""></div>
+                <h3>Brand Recognition</h3>
+                <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+            <div class="card card2">
+                <div  class="img-card"><img src="img/icon-detailed-records.svg" alt=""></div>
+                <h3>Detailed Records</h3>
+                <p>Gain insights into who is clicking your links,knowing when and where people engage with your content helps inform better decisions.</p>
+            </div>
+            <div class="card card3">
+                <div  class="img-card"><img src="img/icon-fully-customizable.svg" alt=""></div>
+                <h3>Fully Cusomizable</h3>
+                <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+            </div>
+        </div>
+    </article>
+    <aside>
+       <h2> <strong>Boost your links today</strong></h2>
+        <div class="btn2"><button><a href="#">Get Started</a></button></div>
+    </aside>
+
+    <footer>
+        <div class="foot">
+        <div class="logo2"> <h1>Shortly</h1></div>
+
+        <ul>
+            <li><h4>Features</h4></li>
+            <li><a href="">Link Shortening</a></li>
+            <li><a href="">Branded Links</a></li>
+            <li><a href="">Analytics</a></li>
+        </ul>
+        
+        <ul>
+            <li><h4>Resources</h4></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Developers</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+        
+        <ul class="foot2">
+            <li><h4>Company</h4></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <img src="img/icon-facebook.svg" alt="">
+            <img src="img/icon-twitter.svg" alt="">
+            <img src="img/icon-pinterest.svg" alt="">
+            <img src="img/icon-instagram.svg" alt="">
+        </div>
+        </div>
+    </footer>
+    <script>
+        const openNav=document.querySelector('.open-nav')
+        const closeNav =document.querySelector('.close-nav')
+        const nav=document.querySelector('nav')
+
+        openNav.addEventListener('click', e=>{
+            nav.style.display='flex'
+            openNav.style.display='none'
+            closeNav.style.display='block'
+        });
+        closeNav.addEventListener('click' , e=>{
+            nav.style.display='none'
+            openNav.style.display='block'
+            closeNav.style.display='none'
+        })
+    </script>
+</body>
+</html>
